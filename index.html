@@ -28,13 +28,13 @@
     </nav>
     <main>
       
-        <div class="cards-container container-flex">
+        <div class="cards-container container flex" id="cards-container">
         </div>
-        </main>
+    </main>
             <template id="template-news-card">
             <div class="card">
                 <div class="card-header">
-                    <img src="https://via.placeholder.com/400x200" alt="news-img">
+                    <img src="https://via.placeholder.com/400x200" alt="news-img" id="news-img">
                 </div>
                 <div class="card-content">
                     <h3 id="news-title">This is the Title</h3>
@@ -42,7 +42,9 @@
                     <p class="news-desk" id="news-desk">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit quo quisquam consequuntur sunt assumenda expedita saepe vel, incidunt reprehenderit neque!</p>
                 </div>
             </div>
-       
+
+            
+  
     </template>
   
     <script src="script.js"></script>
