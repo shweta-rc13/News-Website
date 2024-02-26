@@ -44,7 +44,7 @@ nav {
     padding-block: 8px;
 
 }
-.comapany-logo img{
+.company-logo img{
     width: 120px;
 }
 .nav-link ul {
@@ -60,9 +60,9 @@ nav {
     color: red;
 
 }
-/* .nav-item:active{
-    color: ;
-} */
+.nav-item:active{
+    color: #2294ed;
+}
 .search-bar {
     height: 32px;
     gap: 8px;
@@ -76,7 +76,7 @@ nav {
     font-family: "Roboto", sans-serif;
 }
 
-.search-btn {
+.search-button {
     background-color:rgb(91, 152, 249) ;
     color: white;
     padding: 8px 24px;
@@ -85,8 +85,9 @@ nav {
     cursor: pointer;
     font-family: "Roboto", sans-serif;
 }
-.search-btn:hover {
+.search-button:hover {
     background-color: #183b56;
+ 
 }
 main{
     padding-block: 20px;
@@ -113,7 +114,7 @@ main{
     background-color: #f9fdff;
     transform: translateY(-2px);
 }
-.card-heade img{
+.card-header img{
     width: 100%;
     height: 180px;
     object-fit: cover;
@@ -124,4 +125,4 @@ main{
 .news-source{
     margin-block: 12px;
     
-}
+} 

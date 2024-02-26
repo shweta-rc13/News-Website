@@ -15,13 +15,13 @@ async function fetchNews (query){
 }
 function bindData(articles){
     const cardsContainer = document.getElementById('cards-container');
-    const newsCardTemplete = document.getElementById('template-news-card');
+    const newsCardTemplate = document.getElementById('template-news-card');
 
     cardsContainer.innerHTML = "";
 
     articles.forEach(article => {
         if(article.urlToImage) return;
-        const cardClone = newsCardTemplete.content.cloneNode(true);
+        const cardClone = newsCardTemplate.content.cloneNode(true);
         fillDataInCard(cardClone, article);
         cardsContainer.appendChild(cardClone);
     });
@@ -58,10 +58,11 @@ function onNavItemClick(id){
 const searchButton = document.getElementById('search-button');
 const searchText = document.getElementById('search-text');
 
-searchButton.addEventListener('click', ()=>{
+searchButton.addEventListener('click', () => {
     const query = searchText.value;
     if(!query) return;
     fetchNews(query);
     curSelectedNav?.classList.remove("active");
+    curSelectedNav = null;
 
 })
